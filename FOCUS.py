@@ -132,7 +132,7 @@ class FOCUS:
         return dic
 
     def getScore(self,codon):
-        '''Returns the relative codon score for a paticular amino acid'''
+        '''Returns the relative codon score for a paticular codon'''
 
         AA = self.CodonToAmino(codon)
         codonList = self.CodonMap[AA]
