@@ -1,7 +1,7 @@
 UCSC iGEM 2015
 ======
 
-# THIS PROJECT IS FROZEN AS OF 9-18-2015
+# PROJECT IS FROZEN AS OF 9-18-2015
 
 Currently only works on Linux or Mac OS X. Some configuration is needed for Windows compatability
 
