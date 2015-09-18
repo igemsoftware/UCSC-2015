@@ -1,0 +1,1 @@
+```sequenceAnalysisTest.txt``` contains the FASTA sequences of 11 dehydrogenase enzymes. It can be used to test whether you have successfully incorporated fastAReader and ProteinParams into your program. (The results can be found in the sequence Analysis User Guide)
