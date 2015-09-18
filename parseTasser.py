@@ -24,7 +24,7 @@ class parseTASSER:
 
     def returnList (self):
         '''Returns a list with the first entry being the secondary
-           structure string and the secodn entry beingn the 
+           structure string and the second entry being the 
            confidence for the secondary structure prediction.
         '''
         returnList = []
