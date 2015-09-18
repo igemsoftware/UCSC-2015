@@ -32,19 +32,16 @@ class CommandLine() :
         
         import argparse
         self.parser = argparse.ArgumentParser(description = 'The FOCUS program is used to view rare frequency codons using a codon usage table and ', 
-                                             epilog = 'Program epilog - some other stuff you feel compelled to say', 
+                                             epilog = 'This is a working prototype', 
                                              add_help = True, #default is True 
                                              prefix_chars = '-', 
-                                             usage = '%(prog)s [options] CodonBiasTable NucleicAcidSeq'
+                                             usage = '%(prog)s  CodonBiasTable NucleicAcidSeq'
                                              )
         self.parser.add_argument('CodonFile', action = 'store', help='Codon Bias Table in GCG format')
         self.parser.add_argument('NucFile', action = 'store', help='Nucleic Acid sequence')
         self.parser.add_argument('SecStruct', action='store',default=None, nargs='?',help='Secondary Structure Prediction in I-TASSER format')
         self.parser.add_argument('OutFile', action = 'store', default=None,nargs='?',help='Output file name')
-#        self.parser.add_argument('-lG', '--longestGene', action = 'store', nargs='?', const=True, default=False, help='longest Gene in an ORF')
-#        self.parser.add_argument('-mG', '--minGene', type=int, choices= (100,200,300,500,1000), action = 'store', help='minimum Gene length')
-#        self.parser.add_argument('-s', '--start', action = 'append', nargs='?', help='start Codon') #allows multiple list options
-#        self.parser.add_argument('-v', '--version', action='version', version='%(prog)s 0.1')  
+
         if inOpts is None :
             self.args = self.parser.parse_args()
         else :
