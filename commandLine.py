@@ -3,6 +3,11 @@
 # Author: David L. Bernick
 # Editted by: Jairo Navarro
 
+'''
+The MIT License (MIT)
+
+Copyright (c) <2015> <David L. Bernick, Jairo Navarro>
+'''
 
 ########################################################################
 # CommandLine

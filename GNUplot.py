@@ -2,6 +2,10 @@
 Author: Jairo Navarro
 Date: July 23, 2015
 
+The MIT License (MIT)
+
+Copyright (c) <2015> <Jairo Navarro>
+
 Description:
 This program will create a file that can be used in a 
 GNUplot script. Currently, the program only contains the class that is

@@ -1,7 +1,11 @@
 #!/usr/bin/env python3
 #Name: Raymond Bryan (rvbryan)
 #Created: 6/30/2015 Last Updated: 9/17/2015
+
 '''
+The MIT License (MIT)
+Copyright (c) <2015> <Raymond Bryan
+>
 The following program will take a FASTA file given as an input
 by the user. The file is then taken and seperated by the FastAreader
 program given in the accompanied SequenceAnalysis.py file, to

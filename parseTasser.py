@@ -2,6 +2,10 @@
 Author: Jairo Navarro
 Date: July 23,2015
 
+The MIT License (MIT)
+
+Copyright (c) <2015> <Jairo Navarro>
+
 Python program to parse I-TASSER secondary structure format files
 The program as currently written returns the 3rd and 4th column from
 the I-TASSER file, which is used in the FOCUS python program.

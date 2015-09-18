@@ -3,6 +3,10 @@
 #Group Members: David Bernick (dbernick@soe.ucsc.edu)
 
 """
+The MIT License (MIT)
+
+Copyright (c) <2015> <David L. Bernick, Cristian Camacho>
+
 This module, called sequenceAnalysis, includes the following classes: ProteinParam,
 and FastAreader. The ProteinParam class calculates and outputs various characteristics of
 a given amino acid sequence. The FastAreader class, designed by Professor David Bernick of
