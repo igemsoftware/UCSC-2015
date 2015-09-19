@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 #Name: Raymond Bryan (rvbryan)
 #Created: 6/30/2015 Last Updated: 9/17/2015
-
 '''
 The MIT License (MIT)
-Copyright (c) <2015> <Raymond Bryan
->
+
+Copyright (c) <2015> <Raymond Bryan>
+
 The following program will take a FASTA file given as an input
 by the user. The file is then taken and seperated by the FastAreader
 program given in the accompanied SequenceAnalysis.py file, to
@@ -107,7 +107,7 @@ class CodonFreq:
                 
 
     def readSeq(self, OriginalSeq):
-        '''The following function allows the forward read to be	analysed of
+        '''The following function allows each sequence read to be analysed of
         codons and append their count to a master list dictionary by matching
         the codon present to the possible codon in the dictionary. '''
         #Go over each nucleotide in the sequence 
@@ -210,26 +210,24 @@ class CodonFreq:
                         PercentPerThou = 0
         
 
-import sequenceAnalysis
+
 def main():
     '''Implements the Usage exception handler that can be raised from anywhere in process.'''
+    import sequenceAnalysis
     import sys
+    # The following block is used for CMD line use output
     usage = "\nUsage: \npython3 %s FASTA.fa\n" % sys.argv[0]
     if len(sys.argv) != 2:
-        print("Please enter a single FASTA file.")
+        FASTA = input("Please enter a single FASTA file:")
         print(usage)
-        sys.exit(3)
-    OUTFILE = sys.argv[1].split(".")[0] + ".dic"
-    FASTA = sys.argv[1]
+    else:
+        FASTA = sys.argv[1]
+    OUTFILE = FASTA.split(".")[0] + ".dic"
     Class = CodonFreq()
     FileOutput = open(OUTFILE, 'w+')
 
-    #IDEL TESTing code w/o cmd line
-##    FASTA = input('file:')
-##    FileOutput = open("ThisFileRightHere.fa", 'w+')
-##    Class = CodonFreq()
-
-    
+    #########Start of Output Processing#########
+    #Grabs each gene sequence in your input Fasta file
     seqRead = sequenceAnalysis.FastAreader(FASTA)
     print('wait for it......')
  
@@ -246,7 +244,7 @@ def main():
     for AA in Class.CodonFrequen.keys():
             for i in range(0,len(Class.CodonFrequen[AA])):
                 for codon in Class.CodonFrequen[AA][i]:
-                    #print: codon, AA, Frequency, number
+                    #print: AA   Codon   #count  Percent/Thousand   CodonFrequncy
 
                     print('{:s} {:s} {:.0f} {:.3f} {:.3f}'.format(AA, codon, Class.CodonCount[AA][i][codon], Class.CodonPerThou[AA][i][codon], Class.CodonFrequen[AA][i][codon]))
                     print('{:s} {:s} {:.0f} {:.3f} {:.3f}'.format(AA, codon, Class.CodonCount[AA][i][codon], Class.CodonPerThou[AA][i][codon], Class.CodonFrequen[AA][i][codon]), file = FileOutput)
