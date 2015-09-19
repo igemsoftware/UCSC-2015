@@ -2,6 +2,9 @@
 # Author: Jairo Navarro
 # Date: July 21, 2015
 
+#The MIT License (MIT)
+#Copyright (c) 2015 Jairo Navarro
+
 # Create a PDF of the graph
 set term jpeg
 set output "Beta_glu.jpeg"
