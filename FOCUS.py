@@ -4,7 +4,7 @@ Date: July 19, 2015
 
 The MIT License (MIT)
 
-Copyright (c) <2015> <Jairo Navarro>
+Copyright (c) 2015 Jairo Navarro
 
 The following program is a command line program for the use of codon optimization. Currently, the program only views where 'rare' codons are likely to be in the nucleic acid sequence, but has noise that needs to be removed. So take the codon 'score' with a grain of salt, this is a
 working prototype. 

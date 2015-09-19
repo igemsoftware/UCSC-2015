@@ -5,7 +5,7 @@
 """
 The MIT License (MIT)
 
-Copyright (c) <2015> <David L. Bernick, Cristian Camacho>
+Copyright (c) 2015 David L. Bernick, Cristian Camacho
 
 This module, called sequenceAnalysis, includes the following classes: ProteinParam,
 and FastAreader. The ProteinParam class calculates and outputs various characteristics of

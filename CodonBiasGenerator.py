@@ -4,7 +4,7 @@
 '''
 The MIT License (MIT)
 
-Copyright (c) <2015> <Raymond Bryan>
+Copyright (c) 2015 Raymond Bryan
 
 The following program will take a FASTA file given as an input
 by the user. The file is then taken and seperated by the FastAreader
@@ -184,6 +184,7 @@ class CodonFreq:
         i=0
         MasterCount = 0
         for AA in self.CodonCount.keys():
+
 
             #get total times the AA is coded
             for i in range(0, len(self.CodonCount[AA])):

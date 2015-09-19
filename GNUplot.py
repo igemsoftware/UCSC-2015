@@ -4,7 +4,7 @@ Date: July 23, 2015
 
 The MIT License (MIT)
 
-Copyright (c) <2015> <Jairo Navarro>
+Copyright (c) 2015 Jairo Navarro
 
 Description:
 This program will create a file that can be used in a 
